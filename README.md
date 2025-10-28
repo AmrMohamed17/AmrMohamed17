@@ -1,6 +1,10 @@
 <h1 align="center">Hi 👋, I'm Amr Mohammed</h1>
 <h3 align="center">An aspiring ML Engineer from Egypt.</h3>
 
+- 📫 How to reach me **amrm88289@gmail.com**
+
+- 📄 Know about my experiences [https://drive.google.com/file/d/1pmuRnnXRLT9KxXC7n805vDp89klIs-CD/view?usp=sharing](https://drive.google.com/file/d/1pmuRnnXRLT9KxXC7n805vDp89klIs-CD/view?usp=sharing)
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/amr-mohammed-788913348/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/amr-mohammed-788913348/" height="30" width="40" /></a>
