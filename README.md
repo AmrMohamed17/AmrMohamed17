@@ -16,7 +16,7 @@ Building AI systems, recommendation engines, and real-world ML applications.
 
 ### 🤝 Connect with me
 <p align="left">
-<a href="https://www.linkedin.com/in/amr-mohammed-788913348/" target="blank">
+<a href="https://www.linkedin.com/in/amr-mohammed-a4629b39a/" target="blank">
 <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" width="40" />
 </a>
 </p>
