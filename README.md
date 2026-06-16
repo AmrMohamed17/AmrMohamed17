@@ -47,9 +47,10 @@ I take models from notebooks to production: versioned data, tracked experiments,
 <a href="https://opencv.org/"><img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" width="40"/></a>
 <br><br>
 <strong>GenAI & MLOps:</strong><br>
-<a href="https://www.langchain.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/langchain/langchain-original.svg" width="40"/></a>
-<a href="https://mlflow.org/"><img src="https://www.vectorlogo.zone/logos/mlflow/mlflow-icon.svg" width="40"/></a>
-<a href="https://dvc.org/"><img src="https://www.vectorlogo.zone/logos/dvc/dvc-icon.svg" width="40"/></a>
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="28"/>
+<img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" height="28"/>
+<img src="https://img.shields.io/badge/DVC-13ADC7?style=for-the-badge&logo=dvc&logoColor=white" height="28"/>
+<img src="https://img.shields.io/badge/ChromaDB-FF6B6B?style=for-the-badge&logoColor=white" height="28"/>
 <br><br>
 <strong>Backend & DevOps:</strong><br>
 <a href="https://fastapi.tiangolo.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" width="40"/></a>
