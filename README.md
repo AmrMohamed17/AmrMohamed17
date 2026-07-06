@@ -5,8 +5,8 @@ I take models from notebooks to production: versioned data, tracked experiments,
 </p>
 
 <p align="center">
-<a href="https://portfolio-pied-theta-64.vercel.app/" target="_blank">🌐 Portfolio</a> &nbsp;•&nbsp;
-<a href="https://www.linkedin.com/in/amr-mohammed-a4629b39a/" target="_blank">💼 LinkedIn</a> &nbsp;•&nbsp;
+<a href="https://amr-mohammed.vercel.app/" target="_blank">🌐 Portfolio</a> &nbsp;•&nbsp;
+<a href="https://www.linkedin.com/in/amr-mohammed01" target="_blank">💼 LinkedIn</a> &nbsp;•&nbsp;
 📧 amrm88289@gmail.com
 </p>
 
