@@ -77,16 +77,6 @@ I build production machine learning systems with reproducible pipelines, experim
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-[![Amr's GitHub stats](https://github-readme-stats.vercel.app/api?username=AmrMohamed17&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&hide=issues)](https://github.com/AmrMohamed17)
-
-</div>
-
----
-
 ## 🎓 Certifications
 
 CS50 · CS50AI (Harvard) &nbsp;•&nbsp; DeepLearning.AI &nbsp;•&nbsp; Mathematics for ML (Imperial College London)
