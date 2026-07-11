@@ -3,7 +3,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1c3c3c,100:2088FF&height=180&section=header&text=Amr%20Mohammed&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=MLOps%20%7C%20RAG%20Systems%20%7C%20Cloud-Native%20AI&descAlignY=60&descSize=18" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=800&color=2088FF&center=true&vCenter=true&width=680&lines=Machine+Learning+Engineer+from+Egypt+%F0%9F%87%AA%F0%9F%87%AC;From+notebooks+to+production%2C+repeatably;Versioned+data+%E2%86%92+tracked+runs+%E2%86%92+automated+deploys)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=800&color=2088FF&center=true&vCenter=true&width=680&lines=Machine+Learning+Engineer+from+Egypt+%F0%9F%87%AA%F0%9F%87%AC;From+notebooks+to+production%2C+repeatably;Versioned+data+%E2%86%92+tracked+runs+%E2%86%92+automated+deploys)](https://amr-mohammed.vercel.app/)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-2088FF?style=for-the-badge&logo=vercel&logoColor=white)](https://amr-mohammed.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amr-mohammed01)
@@ -18,14 +18,16 @@
 ```yaml
 name:      Amr Mohammed
 role:      Machine Learning Engineer
-based_in:  Egypt 🇪🇬  (open to Remote / Cairo)
-focus:     MLOps · RAG systems · production AI
-mission:   "I take models from notebooks to production —
-            versioned data, tracked experiments,
-            automated tests, repeatable deploys."
+location:  Egypt 🇪🇬
+focus:
+  - MLOps
+  - RAG Systems
+  - Production AI
 ```
 
-I build **retrieval-augmented and production ML systems** the way software is meant to ship: data under version control, experiments tracked, tests in CI, and deployments that repeat on every commit. I also ship **real, live products end-to-end** — including a platform running live payments — so I know what "in production" actually costs.
+I build production machine learning systems with reproducible pipelines, experiment tracking, automated testing, and cloud deployment. I've also shipped real products end-to-end — including a live platform with real payments — giving me experience operating software in production environments.
+
+**Currently seeking:** Machine Learning Engineer / AI Engineer / MLOps Engineer roles — remote or Cairo.
 
 ---
 
@@ -53,43 +55,47 @@ I build **retrieval-augmented and production ML systems** the way software is me
 
 ---
 
-## 🚀 Featured Projects — the Pipeline in Practice
+## 🧠 Featured: DocuMind
 
-| Project | What it proves | Stack | Links |
-|---|---|---|---|
-| **🧠 DocuMind** | RAG platform wrapped in a **full MLOps pipeline**: DVC data versioning on AWS S3, MLflow experiment tracking, and CI/CD that runs Pytest + deploys to EC2 on every commit. *(active development)* | LangChain · ChromaDB · DVC · MLflow · AWS · GitHub Actions | [Code](https://github.com/AmrMohamed17/Documind) |
-| **🎁 la7za** | Arabic-first digital gift platform, **solo-built and live with real Paddle payments** — proof I ship products, not demos. | Full-stack · Paddle · Vercel | [Code](https://github.com/AmrMohamed17/la7za) · [Live](https://la7za.vercel.app) |
-| **☕ BeanBuddy** | Cloud-native conversational ordering agent deployed on managed cloud infra. | Dialogflow ES · FastAPI · AWS RDS · EC2 | [Code](https://github.com/AmrMohamed17/BeanBuddy) |
-| **🔎 Local Product Finder** | Graduation project (**A+**): real-time product recognition + hybrid recommender. | MobileNet · Sentence-BERT · LightFM | [Code](https://github.com/AmrMohamed17/Local-Product-Finder) |
-| **📚 Elevvo Internship** | **6 end-to-end ML projects**, from data to evaluation. | Python · scikit-learn · PyTorch | [Code](https://github.com/AmrMohamed17/Elevvo_Internship) |
+> **RAG platform wrapped in a full MLOps pipeline** — [Code](https://github.com/AmrMohamed17/Documind) *(active development)*
+
+- 📦 Versioned datasets with **DVC** backed by **AWS S3**
+- 🔬 Experiment tracking with **MLflow**
+- ✅ **CI/CD** via GitHub Actions — Pytest runs and deploys to **EC2** on every commit
+- 🔎 Retrieval built on **LangChain + ChromaDB**
 
 ---
 
-## 📊 Monitor — the Metrics Panel
+## 🚀 More Projects
+
+| Project | What it proves | Stack | Links |
+|---|---|---|---|
+| **🎁 la7za** | Arabic-first digital gift platform, solo-built and live with real **Paddle payments**. | Full-stack · Paddle · Vercel | [Code](https://github.com/AmrMohamed17/la7za) · [Live](https://la7za.vercel.app) |
+| **☕ BeanBuddy** | Cloud-native conversational ordering agent deployed on managed cloud infra. | Dialogflow ES · FastAPI · AWS RDS · EC2 | [Code](https://github.com/AmrMohamed17/BeanBuddy) |
+| **🔎 Local Product Finder** | Graduation project (**A+**) — real-time product recognition + hybrid recommender. | MobileNet · Sentence-BERT · LightFM | [Code](https://github.com/AmrMohamed17/Local-Product-Finder) |
+| **📚 Elevvo Internship** | 6 end-to-end ML projects, from data to evaluation. | Python · scikit-learn · PyTorch | [Code](https://github.com/AmrMohamed17/Elevvo_Internship) |
+
+---
+
+## 📊 GitHub Stats
 
 <div align="center">
 
 [![Amr's GitHub stats](https://github-readme-stats.vercel.app/api?username=AmrMohamed17&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&hide=issues)](https://github.com/AmrMohamed17)
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=AmrMohamed17&theme=tokyonight&hide_border=true)](https://github.com/AmrMohamed17)
 
 </div>
 
 ---
 
 ## 🎓 Certifications
-- **CS50** — Introduction to Computer Science (Harvard)
-- **CS50AI** — Introduction to Artificial Intelligence with Python (Harvard)
-- **DeepLearning.AI** — Deep Learning
-- **Imperial College London** — Mathematics for Machine Learning
+
+CS50 · CS50AI (Harvard) &nbsp;•&nbsp; DeepLearning.AI &nbsp;•&nbsp; Mathematics for ML (Imperial College London)
 
 ---
 
-## 📫 Deploy a Conversation
-
-I'm **open to Machine Learning Engineer / AI Engineer roles — remote or Cairo.** If you need someone who can carry a model from notebook to a monitored, automated production deployment, let's talk.
-
 <div align="center">
+
+**If you need someone who can carry a model from notebook to a monitored, automated production deployment — let's talk.**
 
 [![Portfolio](https://img.shields.io/badge/See%20my%20work-2088FF?style=for-the-badge&logo=vercel&logoColor=white)](https://amr-mohammed.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amr-mohammed01)
