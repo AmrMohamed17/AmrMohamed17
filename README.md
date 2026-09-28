@@ -41,34 +41,9 @@ When something breaks, I go back to the fundamentals to find out <i>why</i>. Thr
 
 I built the evaluation first: a hand-written, programmatically validated **100-question golden set** and a three-metric harness. Multi-hop recall came back weak. I traced every miss back to the database and found the right passage **was** being retrieved, just ranked below the cutoff. That made it a *ranking* problem, not a *coverage* problem. So the fix was a cross-encoder reranker fused with the dense ranks, not a bigger index.
 
-```mermaid
----
-config:
-  xyChart:
-    height: 300
-  themeVariables:
-    xyChart:
-      plotColorPalette: "#f0a500"
----
-xychart-beta
-  title "recall@10 · dense only vs. + reranker (RRF)"
-  x-axis ["single-hop · dense", "single-hop · +rerank", "multi-hop · dense", "multi-hop · +rerank"]
-  y-axis "recall@10" 0 --> 1
-  bar [0.97, 0.97, 0.36, 0.57]
-```
+<p align="center"><img src="assets/documind-recall.svg" width="100%" alt="DocuMind recall@10: single-hop 0.97 dense and 0.97 with reranker (held); multi-hop 0.36 dense, 0.57 with reranker."></p>
 
-```mermaid
-flowchart LR
-  Q([query]) --> E[Gemini embed<br/>768d]
-  E --> V[(pgvector<br/>dense top-k)]
-  V --> R[FlashRank<br/>cross-encoder]
-  V -. dense ranks .-> F
-  R --> F{{Reciprocal<br/>Rank Fusion}}
-  F --> A([grounded answer])
-  G[[CI gate: PR fails if<br/>recall < baseline]] -. guards .-> V
-  classDef amber fill:#f0a500,stroke:#f0a500,color:#121518
-  class F,G amber
-```
+<p align="center"><img src="assets/documind-pipeline.svg" width="100%" alt="DocuMind pipeline: query, Gemini embedding, pgvector dense top-k, FlashRank cross-encoder, reciprocal rank fusion with the dense ranks, grounded answer; a CI gate fails any PR that lowers recall below baseline."></p>
 
 | | result |
 | --- | --- |
@@ -86,15 +61,7 @@ flowchart LR
 
 An SDXL LoRA for Cairo's Mamluk architecture. v1 learned the style, and then a plain *"a mosque facade"* prompt, with no trigger word, also came out Mamluk. The LoRA had overwritten the **base class**, not just learned a new concept.
 
-```mermaid
-flowchart LR
-  D[("42 licensed photos<br/>from ~237 candidates")] --> V1[v1 LoRA]
-  V1 -->|"'a mosque facade'<br/>comes out Mamluk"| X{{"diagnosis:<br/>base class<br/>overwritten"}}
-  X --> V2["v2: prior-preservation<br/>regularization<br/>+ strength sweep (0.8)"]
-  V2 --> OK(["fixed-seed grids<br/>base · v1 · v2"])
-  classDef amber fill:#f0a500,stroke:#f0a500,color:#121518
-  class X amber
-```
+<p align="center"><img src="assets/lora-flow.svg" width="100%" alt="Mamluk LoRA: 42 licensed photos, v1 LoRA, diagnosis (base class overwritten), v2 with prior-preservation regularization and a strength sweep, fixed-seed comparison grids."></p>
 
 Prior preservation trains on generic class images alongside the style images, so the model keeps its prior for "mosque" and binds the new style to the trigger token only. Remaining limitations are documented in the model card.
 
