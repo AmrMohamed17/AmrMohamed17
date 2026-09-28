@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-label="Of 2,568 GitHub issues, 90.7% had their type label applied by the issue's own author via a template; 9.3% by anyone else.">
+<style>
+text{font-family:"JetBrains Mono","SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;white-space:pre}
+.h{font-size:15px;fill:#ecf0f2;font-weight:700} .s{font-size:12px;fill:#7a858f}
+.big{font-size:26px;font-weight:700} .lab{font-size:12.5px}
+</style>
+<rect x="1" y="1" width="898" height="188" rx="14" fill="#121518" stroke="#2a3138"/>
+<text x="34" y="40" class="h">who applied the issue's "type" label?</text>
+<text x="34" y="62" class="s">2,568 issues · 5 OSS ecosystems · audited before any agent code</text>
+<rect x="34" y="92" width="832" height="34" rx="6" fill="#2a3138"/>
+<rect x="34" y="92" width="0" height="34" rx="6" fill="#f0a500">
+  <animate attributeName="width" values="0;754.6" keyTimes="0;1" calcMode="spline" keySplines="0.2 0.8 0.2 1" begin="0.3s" dur="1.6s" fill="freeze"/>
+</rect>
+<text x="48" y="117" class="big" fill="#121518" opacity="0">90.7%<animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.4s" fill="freeze"/></text>
+<text x="854" y="115" class="lab" fill="#ecf0f2" text-anchor="end">9.3%</text>
+<text x="34" y="152" class="lab" fill="#f0a500">■ the issue's own author, via template (not a maintainer's judgment)</text>
+<text x="866" y="152" class="lab" fill="#9aa5ae" text-anchor="end">anyone else ■</text>
+</svg>
