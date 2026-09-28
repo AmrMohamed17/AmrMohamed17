@@ -20,15 +20,15 @@ name:      Amr Mohammed
 role:      Machine Learning Engineer
 location:  Cairo, Egypt
 now:
-  - ML Engineer @ GETnFORM              # diffusion LoRA fine-tuning (part-time)
-  - AI Intern   @ Al Amalka Securities  # document OCR, market-data pipelines
+  - ML Engineer @ GETnFORM              # on-prem generation platform, Flux LoRAs (part-time)
+  - AI Intern   @ Al Amalka Securities  # Arabic document OCR, market-data pipelines
 focus:
   - LLM & agent systems (RAG, LangGraph, MCP)
   - evaluation-first engineering
   - generative vision (LoRA · SDXL · Flux)
 ```
 
-I build LLM, agent, and vision systems where the quality claims are **measured**, not asserted: golden datasets, retrieval metrics, hallucination guards, and CI that blocks changes which make the system worse. Lately that includes fine-tuning diffusion models, where the eval is fixed prompts and seeds and the failure modes are style bleed and hallucinated architecture.
+I build LLM, agent, and vision systems where the quality claims are **measured**, not asserted: golden datasets, retrieval metrics, hallucination guards, and CI that blocks changes which make the system worse. When something fails, I reason from ML fundamentals to find out why. In DocuMind, weak retrieval turned out to be a *ranking* failure, not a coverage one. In my Mamluk LoRA, style leakage was the model overwriting its base class, which is a *regularization* problem. Lately that includes fine-tuning diffusion models, where the eval is fixed prompts and seeds and the failure modes are style bleed and hallucinated architecture.
 
 **Open to:** full-time Machine Learning Engineer / AI Engineer roles, remote or Cairo.
 
@@ -38,12 +38,13 @@ I build LLM, agent, and vision systems where the quality claims are **measured**
 
 **ML Engineer · GETnFORM** (part-time, remote · Sep 2026–)
 
-Training Flux LoRAs for exact architectural style transfer on a confidential client dataset: curation, captioning, and fixed-seed evaluation for style accuracy, hallucination, and bleeding. I got the role on the strength of the Mamluk LoRA below.
+- Architecting a confidential client's on-prem image-generation platform: async GPU job queue, swappable inference engines behind one interface, and a LoRA registry. Confidentiality forced self-hosting. My break-even analysis priced that choice (fal is cheaper below ~10–20k images/month) and sized the hardware (48 GB VRAM, Flux licence).
+- Training Flux LoRAs for exact architectural style transfer: curation, captioning, and fixed-seed evaluation for style accuracy, hallucination, and bleeding. I got the role on the strength of the Mamluk LoRA below.
 
 **AI Intern · Al Amalka Securities** (EGX brokerage · Aug 2026–)
 
 - Offline Egyptian national-ID extractor (OpenCV + two YOLO models + PaddleOCR 3.x Arabic): **84/84** front fields correct on the test set, every field confidence-tagged. Extended to KSA passports (MRZ + VLM) and birth certificates, where I traced digit errors to a missing Arabic-Indic zero glyph in PaddleOCR v3.
-- [Live OCR of the MIST trade feed](https://github.com/AmrMohamed17/egx-ocr). The documented finding: the window repaints in jumps during bursts, so coverage is capped (~90–95%) by the data source, not by the OCR.
+- [Live OCR of the MIST trade feed](https://github.com/AmrMohamed17/egx-ocr). The documented finding: the window repaints in jumps during bursts, so coverage is capped (~90–95%) by the data source, not by the OCR. It feeds an EGX forecasting pipeline I'm building.
 - Rebuilt the company's bilingual RTL website (React/Express, admin CMS, auth).
 
 ---
@@ -60,8 +61,8 @@ A RAG platform over technical documentation where every quality claim is measure
 | --- | --- |
 | Multi-hop recall@10 | **0.36 → 0.57** after two-stage retrieval (+58%) |
 | Single-hop recall@10 | **0.97** — held flat through reranking |
-| Hallucination guard | **15/15** unanswerable questions correctly refused |
-| Answer faithfulness | **4.82/5** mean · 95% scored ≥ 4 (LLM-as-judge) |
+| Hallucination guard | held on **all 15** unanswerable cases |
+| Answer faithfulness | **4.82/5** mean · 95% scored ≥ 4 (LLM-as-judge, spot-checked, used directionally) |
 
 **Stack:** FastAPI · PostgreSQL + pgvector · Gemini embeddings (768d, Matryoshka-truncated) · FlashRank cross-encoder + Reciprocal Rank Fusion · Docker Compose + Caddy on AWS EC2 · GitHub Actions
 
@@ -86,7 +87,7 @@ A supervised multi-agent system (in progress) that finds claimable open-source i
 | Project | What it demonstrates | Stack | Links |
 | --- | --- | --- | --- |
 | 🎁 **la7za** | Arabic-first digital gift platform — built solo, live, with real payment processing. Fully RTL. | Next.js · TypeScript · Supabase · Paddle | [Code](https://github.com/AmrMohamed17/la7za) · [Live](https://la7za.vercel.app) |
-| 🕌 **Mamluk Cairo Style LoRA** | SDXL LoRA built in one day on 42 licensed photos (curated from ~237). v1 leaked the style without the trigger word; v2 fixed it with prior-preservation regularization, and a strength sweep removed the colour cast. | SDXL · LoRA · prior preservation | [Model](https://huggingface.co/Amr292/mmlkcairo-sdxl-lora) · [Dataset](https://huggingface.co/datasets/Amr292/mamluk-cairo-style-dataset) |
+| 🕌 **Mamluk Cairo Style LoRA** | SDXL LoRA built in one day on 42 licensed photos (curated from ~237). v1 overwrote the base class (plain "mosque" prompts came out Mamluk). v2 added prior-preservation regularization to bind the style to the trigger token, and a strength sweep removed the colour cast. | SDXL · LoRA · prior preservation | [Model](https://huggingface.co/Amr292/mmlkcairo-sdxl-lora) · [Dataset](https://huggingface.co/datasets/Amr292/mamluk-cairo-style-dataset) |
 | 📨 **Reactivation Agent** | Closed-lost leads → scored, drafted, and **grounding-verified** re-engagement emails. A separate verifier call flags unsupported claims, and the send endpoint refuses anything a human hasn't approved. | Next.js · Supabase · Resend · LLM pipeline | [Code](https://github.com/AmrMohamed17/Reactivation-Agent) · [Live](https://reactivation-agent-one.vercel.app) |
 | 🔎 **Local Product Finder** | Graduation project (**A+**) — real-time product recognition + hybrid recommender, shipped in a mobile app with a cross-functional team. | MobileNet · Sentence-BERT · LightFM · TensorFlow | [Code](https://github.com/AmrMohamed17/Local-Product-Finder) |
 | 📚 **Elevvo Internship** | 6 end-to-end ML tasks: regression, clustering, imbalanced classification (SMOTE), recommenders (SVD), CNN transfer learning — tracked with MLflow. | scikit-learn · XGBoost · TensorFlow · MLflow | [Code](https://github.com/AmrMohamed17/Elevvo_Internship) |
