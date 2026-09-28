@@ -9,7 +9,7 @@ text{font-family:"JetBrains Mono","SFMono-Regular",Consolas,"Liberation Mono",Me
 <text x="34" y="62" class="s">2,568 issues · 5 OSS ecosystems · audited before any agent code</text>
 <rect x="34" y="92" width="832" height="34" rx="6" fill="#2a3138"/>
 <rect x="34" y="92" width="0" height="34" rx="6" fill="#f0a500">
-  <animate attributeName="width" from="0" to="754.6" begin="0.3s" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+  <animate attributeName="width" values="0;754.6" keyTimes="0;1" calcMode="spline" keySplines="0.2 0.8 0.2 1" begin="0.3s" dur="1.6s" fill="freeze"/>
 </rect>
 <text x="48" y="117" class="big" fill="#121518" opacity="0">90.7%<animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.4s" fill="freeze"/></text>
 <text x="854" y="115" class="lab" fill="#ecf0f2" text-anchor="end">9.3%</text>
