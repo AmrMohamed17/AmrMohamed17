@@ -26,7 +26,7 @@ When something breaks, I go back to the fundamentals to find out <i>why</i>. Thr
 
 + AI Intern @ Al Amalka Securities (EGX brokerage)                  Aug 2026 → now
     offline Egyptian national-ID extractor: OpenCV + 2× YOLO + PaddleOCR (Arabic)
-    84/84 front fields correct on the test set, every field confidence-tagged
+    all front fields correct on 84/84 test cards, every field confidence-tagged
     extended to KSA passports (MRZ + VLM) and birth certificates
     live OCR of the MIST trade feed → feeds an EGX forecasting pipeline
 
